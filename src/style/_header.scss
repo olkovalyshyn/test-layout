@@ -1,4 +1,199 @@
-body {
-  //   background-color: rgb(82, 216, 29);
-  background: url("../img/003.jpg");
+.header {
+  background: url('../img/building-f.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background: grey;
+
+  // @include for-size(mobile) {
+  //   background-color: green;
+  // }
+  // @include for-size(tablet) {
+  //   background-color: yellow;
+  // }
+  // @include for-size(desktop) {
+  //   background-color: red;
+  // }
+
+  // @media screen and (max-width: 767px) {
+  //   background-color: green;
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   background-color: yellow;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   background-color: red;
+  // }
+}
+
+.header-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding-top: 100px;
+  padding-bottom: 139px;
+}
+
+.header-block-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 512px;
+  margin-right: 229px;
+}
+
+.header-block-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  background-color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 {
+  // margin-top: 0;
+  // margin-bottom: 23;
+  font-size: 60px;
+  font-weight: 900;
+
+  color: #ffffff;
+  font-family: 'Myriad Pro Regular';
+}
+
+span {
+  font-weight: 100;
+  color: #ff8b38;
+}
+
+.brand-describe {
+  position: relative;
+  // margin: 0px;
+  margin-top: 23px;
+  margin-bottom: 73px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 100;
+  color: #ffffff;
+  font-family: 'Myriad Pro Regular';
+
+  // border-bottom: 2px solid #ffffff;
+}
+
+.brand-describe::after {
+  content: '';
+  position: absolute;
+  bottom: -32px;
+  left: 0%;
+  width: 64px;
+  height: 2px;
+  // margin-left: -30%;
+  background: #ffffff;
+}
+
+.header-block-info .text-describe {
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-family: 'Raleway Light';
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header-block-info-btn {
+  width: 135px;
+  height: 42px;
+  // padding-top: 12px;
+  // padding-bottom: 8px;
+  font-family: 'Open Sans Semibold';
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.header-block-info-btn:hover {
+  background-color: #ff8b38;
+}
+
+.header-block-form {
+  width: 360px;
+  height: 362px;
+  border-radius: 2px;
+  // background-color: #ffffff;
+  // background-color: red;
+  // outline: 2px solid red;
+}
+
+.header-block-form .text-title {
+  padding-top: 17px;
+  padding-bottom: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 900;
+  font-family: 'Open Sans Bold';
+  color: #333333;
+  background-color: #f5f5f5;
+
+  text-align: center;
+}
+
+.header-block-form span {
+  color: #ff8b38;
+  font-weight: 900;
+}
+
+.header-block-form input {
+  width: 285px;
+  height: 31px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  box-sizing: border-box;
+  padding-left: 14px;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  border-left: 1px solid #fbfbfb;
+  border-right: 1px solid #fbfbfb;
+}
+input::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: 'Open Sans regular';
+
+  color: #bdbdbd;
+  margin-left: 10px;
+}
+
+input.name {
+  margin-top: 29px;
+}
+
+input.email {
+  margin-top: 36px;
+}
+
+input.password {
+  margin-top: 47px;
+  margin-bottom: 49px;
+}
+
+.header-block-form-btn {
+  height: 54px;
+  background-color: #ff9b51;
+  border: none;
+  font-family: 'Open Sans Semibold';
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
 }
