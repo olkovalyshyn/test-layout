@@ -1,0 +1,295 @@
+.content {
+  @media (min-width: 1280px) {
+    width: 434px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 10px;
+    max-width: 380px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.feature-img2 {
+  @media (min-width: 1280px) {
+    height: 290px;
+    width: 453px;
+    background-image: url('../img/Feature-1_Houses_From_above.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 40px 4px rgba(0, 0, 0, 0.2);
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    height: 250px;
+    width: 410px;
+    background-image: url('../img/Feature-1_Houses_From_above.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 40px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.subcontent-img-up {
+  background-image: url('../img/btn_up.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 1280px) {
+    height: 40px;
+    width: 40px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    height: 40px;
+    width: 40px;
+  }
+  @media (max-width: 767px) {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.subcontent-img-down {
+  background-image: url('../img/btn_down.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 1280px) {
+    height: 40px;
+    width: 40px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    height: 40px;
+    width: 40px;
+  }
+  @media (max-width: 767px) {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.feature-2 .text-describe {
+  font-family: 'Open Sans Regular';
+  color: #86878b;
+  line-height: 1.4;
+  font-weight: 400;
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+    max-width: 430px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 380px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.feature-2-article {
+  position: relative;
+  font-family: 'Open Sans Bold';
+  color: #000000;
+  line-height: 2.1;
+  font-weight: 900;
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 53px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+}
+
+.feature-2-article::after {
+  @media (min-width: 1280px) {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 0%;
+    width: 64px;
+    height: 2px;
+    background: #ff8b38;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0%;
+    width: 64px;
+    height: 2px;
+    background: #ff8b38;
+  }
+}
+
+.subcontent-text-describe {
+  font-family: 'Open Sans Regular';
+  color: #86878b;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
+.subcontent-block-up,
+.subcontent-block-down {
+  display: flex;
+}
+
+.feature-2-subarticle {
+  font-family: 'Open Sans Senibold';
+  color: #212121;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-top: 0px;
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+.subcontent-block-text {
+  @media (min-width: 1280px) {
+    margin-left: 30px;
+    max-width: 365px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 25px;
+    width: 300px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 25px;
+    width: 300px;
+  }
+}
+
+.subcontent > div:nth-child(2n-1) {
+  margin-bottom: 38px;
+  @media (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+}
+
+.feature-2 {
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 106px;
+    margin-bottom: 133px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.feature-3 {
+  background-color: #f5f5f5;
+
+  @media (min-width: 1280px) {
+    padding-top: 103px;
+    padding-bottom: 130px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.feature-3-block {
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: 767px) {
+  }
+}
+
+.feature-img3 {
+  @media (min-width: 1280px) {
+    height: 290px;
+    width: 453px;
+    background-image: url('../img/Feature-2_City_Clouds.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 40px 4px rgba(0, 0, 0, 0.2);
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    height: 230px;
+    width: 300px;
+    background-image: url('../img/Feature-2_City_Clouds.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 40px 4px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 767px) {
+  }
+}

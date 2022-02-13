@@ -1,1 +1,2 @@
-import "../style/app.scss";
+import '../style/app.scss';
+import './tabs';

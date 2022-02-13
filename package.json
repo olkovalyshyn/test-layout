@@ -9,14 +9,14 @@
     "serv": "webpack-dev-server",
     "start": "webpack-dev-server --mode=development"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/olkovalyshyn/test-layout.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-    "bugs": {
+  "bugs": {
     "url": "https://github.com/olkovalyshyn/test-layout/issues"
   },
   "homepage": "https://github.com/olkovalyshyn/test-layout#readme",
@@ -25,6 +25,7 @@
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.49.0",
     "sass-loader": "^12.4.0",

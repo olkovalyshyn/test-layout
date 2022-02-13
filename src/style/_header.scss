@@ -3,50 +3,90 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background: grey;
-
-  // @include for-size(mobile) {
-  //   background-color: green;
-  // }
-  // @include for-size(tablet) {
-  //   background-color: yellow;
-  // }
-  // @include for-size(desktop) {
-  //   background-color: red;
-  // }
-
-  // @media screen and (max-width: 767px) {
-  //   background-color: green;
-  // }
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   background-color: yellow;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   background-color: red;
-  // }
 }
 
 .header-block {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  @media (min-width: 1280px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 
-  padding-top: 100px;
-  padding-bottom: 139px;
+    padding-top: 100px;
+    padding-bottom: 139px;
+
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header-block-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 512px;
-  margin-right: 229px;
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-right: 20px;
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.brand {
+  @media (min-width: 1280px) {
+    font-size: 77px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 70px;
+  }
+  @media (max-width: 767px) {
+    font-size: 55px;
+  }
 }
 
 .header-block-form {
   display: flex;
   flex-direction: column;
-  max-width: 360px;
-  background-color: #ffffff;
+
+  @media (min-width: 1280px) {
+    max-width: 360px;
+    background-color: #ffffff;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    max-width: 300px;
+    background-color: #ffffff;
+  }
+  @media (max-width: 767px) {
+    max-width: 300px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
 }
 
 h1 {
@@ -54,13 +94,19 @@ h1 {
 }
 
 h1 {
-  // margin-top: 0;
-  // margin-bottom: 23;
-  font-size: 60px;
-  font-weight: 900;
-
   color: #ffffff;
   font-family: 'Myriad Pro Regular';
+  font-weight: 900;
+
+  @media (min-width: 1280px) {
+    font-size: 60px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 50px;
+  }
+  @media (max-width: 767px) {
+    font-size: 46px;
+  }
 }
 
 span {
@@ -69,36 +115,77 @@ span {
 }
 
 .brand-describe {
-  position: relative;
-  // margin: 0px;
-  margin-top: 23px;
-  margin-bottom: 73px;
-  font-size: 36px;
-  line-height: 1.2;
-  font-weight: 100;
-  color: #ffffff;
-  font-family: 'Myriad Pro Regular';
-
-  // border-bottom: 2px solid #ffffff;
+  @media (min-width: 1280px) {
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 73px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Myriad Pro Regular';
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Myriad Pro Regular';
+  }
+  @media (max-width: 767px) {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Myriad Pro Regular';
+  }
 }
 
 .brand-describe::after {
-  content: '';
-  position: absolute;
-  bottom: -32px;
-  left: 0%;
-  width: 64px;
-  height: 2px;
-  // margin-left: -30%;
-  background: #ffffff;
+  @media (min-width: 1280px) {
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    left: 0%;
+    width: 64px;
+    height: 2px;
+    background: #ffffff;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0%;
+    width: 54px;
+    height: 2px;
+    background: #ffffff;
+  }
 }
 
 .header-block-info .text-describe {
-  margin-top: 0;
-  margin-bottom: 44px;
   font-family: 'Raleway Light';
-  color: #ffffff;
   line-height: 1.4;
+  color: #ffffff;
+  margin-top: 0;
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    margin-bottom: 44px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
 }
 
 button {
@@ -106,14 +193,30 @@ button {
 }
 
 .header-block-info-btn {
-  width: 135px;
-  height: 42px;
-  // padding-top: 12px;
-  // padding-bottom: 8px;
-  font-family: 'Open Sans Semibold';
-  color: #ffffff;
-  background-color: transparent;
-  border: 2px solid #ffffff;
+  @media (min-width: 1280px) {
+    width: 135px;
+    height: 42px;
+    font-family: 'Open Sans Semibold';
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 120px;
+    height: 38px;
+    font-family: 'Open Sans Semibold';
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
+  @media (max-width: 767px) {
+    width: 135px;
+    height: 42px;
+    font-family: 'Open Sans Semibold';
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
 }
 
 .header-block-info-btn:hover {
@@ -121,12 +224,18 @@ button {
 }
 
 .header-block-form {
-  width: 360px;
-  height: 362px;
   border-radius: 2px;
-  // background-color: #ffffff;
-  // background-color: red;
-  // outline: 2px solid red;
+
+  @media (min-width: 1280px) {
+    width: 360px;
+    height: 362px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 330px;
+  }
+  @media (max-width: 767px) {
+    width: 360px;
+  }
 }
 
 .header-block-form .text-title {
@@ -134,14 +243,24 @@ button {
   padding-bottom: 14px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 900;
+
   font-family: 'Open Sans Bold';
+  font-weight: 900;
+  line-height: 1.2;
+
   color: #333333;
   background-color: #f5f5f5;
-
   text-align: center;
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .header-block-form span {
@@ -150,10 +269,22 @@ button {
 }
 
 .header-block-form input {
-  width: 285px;
-  height: 31px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: 1280px) {
+    width: 285px;
+    height: 31px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 265px;
+    height: 25px;
+  }
+
+  @media (max-width: 767px) {
+    width: 265px;
+    height: 21px;
+  }
 }
 
 input {
@@ -175,16 +306,42 @@ input::placeholder {
 }
 
 input.name {
-  margin-top: 29px;
+  @media (min-width: 1280px) {
+    margin-top: 29px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 26px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 22px;
+  }
 }
 
 input.email {
-  margin-top: 36px;
+  @media (min-width: 1280px) {
+    margin-top: 36px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 32px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 26px;
+  }
 }
 
 input.password {
-  margin-top: 47px;
-  margin-bottom: 49px;
+  @media (min-width: 1280px) {
+    margin-top: 47px;
+    margin-bottom: 49px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
 }
 
 .header-block-form-btn {
